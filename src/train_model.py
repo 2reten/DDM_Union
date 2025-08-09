@@ -37,16 +37,24 @@ jobs = [
 ]
 
 def make_workers_uniform(n=100000):
-    return [{
-        "name": f"worker_{i}",
-        "phone": f"010-0000-{i:04d}",
-        "sex": random.choice(sex),
-        "age": random.randint(20, 60),
-        "region": random.choice(regions),
-        "position": random.choice(jobs),
-        "time": random.choice(time_slots),
-        "experience": random.choice([True, False])
-    } for i in range(n)]
+    workers = []
+    for i in range(n):
+        prefix_block = i // 10000        
+        last4 = i % 10000               
+        phone = f"010-{prefix_block:04d}-{last4:04d}"
+
+        workers.append({
+            "name": f"worker_{i}",
+            "phone": phone,
+            "sex": random.choice(sex),
+            "age": random.randint(20, 60),
+            "region": random.choice(regions),
+            "position": random.choice(jobs),
+            "time": random.choice(time_slots),
+            "experience": random.choice([True, False])
+        })
+    return workers
+
 
 def rule_score(worker, request):
     score = 0
@@ -137,3 +145,4 @@ y_pred = best_pipe.predict(X_test)
 print("Best Params:", search.best_params_)
 print("MSE:", mean_squared_error(y_test, y_pred))
 print("R²:", r2_score(y_test, y_pred))
+
