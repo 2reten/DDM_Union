@@ -129,8 +129,8 @@ job_match, sex_match, time_match
 ## 출력 예시
 ```python
 === 추천된 알바생 Top 3 ===
-worker_46130 / 79점 / {'name': 'worker_46130', 'phone': '010-0000-46130', 'sex': '남자', 'age': 51, 'region': '서초구', 'position': '고객 응대', 'time': '오후', 'experience': True}
-worker_29565 / 76점 / {'name': 'worker_29565', 'phone': '010-0000-29565', 'sex': '남자', 'age': 28, 'region': '동작구', 'position': '고객 응대', 'time': '오후', 'experience': True}
-worker_36713 / 76점 / {'name': 'worker_36713', 'phone': '010-0000-36713', 'sex': '남자', 'age': 32, 'region': '동작구', 'position': '고객 응대', 'time': '오후', 'experience': True}
+worker_46130 / 79점 / {'name': 'worker_46130', 'phone': '010-0004-6130', 'sex': '남자', 'age': 51, 'region': '서초구', 'position': '고객 응대', 'time': '오후', 'experience': True}
+worker_29565 / 76점 / {'name': 'worker_29565', 'phone': '010-0002-9565', 'sex': '남자', 'age': 28, 'region': '동작구', 'position': '고객 응대', 'time': '오후', 'experience': True}
+worker_36713 / 76점 / {'name': 'worker_36713', 'phone': '010-0003-36713', 'sex': '남자', 'age': 32, 'region': '동작구', 'position': '고객 응대', 'time': '오후', 'experience': True}
 ```
 
