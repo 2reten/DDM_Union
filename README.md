@@ -1,6 +1,11 @@
 # 하루핏 (HARUFIT)  
 > **"하루 안에 딱 맞는 알바를, 빠르고 정확하게"**
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/2reten/DDM_Union/main/assets/Harufit_logo" alt="Harufit Logo" width="200"/>
+</p>
+<br>
+   
 <div align=center><h1>📚 STACKS</h1></div>
 
 <div align=center>
